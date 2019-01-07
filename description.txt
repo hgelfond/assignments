@@ -1,0 +1,1 @@
+This output file contains a list of the expenditures made by the Democratic Caucus and Republican Conference. While the statistics in my output file are for both parties combined, the data can eventually be used to analyze whether significant differences exist in the internal spending patterns for each party.
