@@ -24,11 +24,11 @@ with open('members.csv', 'w') as f:
         	member['age'],
             member['secretIdentity'],
             str(member['powers']),
-            # member['squadName'],
-            # member['homeTown'],
-            # member['formed'],
-            # member['secretBase'],
-            # member['active']
+            superheroes['squadName'],
+            superheroes['homeTown'],
+            superheroes['formed'],
+            superheroes['secretBase'],
+            superheroes['active']
         
 
         ]
