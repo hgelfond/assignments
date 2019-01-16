@@ -10,8 +10,17 @@ members = superheroes['members']
 for member in members:
 	print(member)
 
+#get powers
+# data = []
+# for member in members:
+#     #for each member get a list of the powers
+#     powers = member['powers']
+#     #print(powers)
+# #loop through the powers and print each one
+#     for power in powers:
+#         data.append(power)
 
-#save data for each member into csv row
+# #save data for each member into csv row
 
 
 with open('members.csv', 'w') as f:
@@ -29,7 +38,5 @@ with open('members.csv', 'w') as f:
             superheroes['formed'],
             superheroes['secretBase'],
             superheroes['active']
-        
-
         ]
         writer.writerow(row)

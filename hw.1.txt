@@ -1,0 +1,23 @@
+touch filter.py
+subl filter.py
+ls -l
+chmod +x filter.py
+
+curl -N https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv | ./filter.py
+
+curl -N https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv | ./filter.py > expensive_water.csv
+
+echo expensive_water.csv | csvstat expensive_water.csv > expensive_water_summary.txt
+
+
+
+wget https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv
+
+PART 2
+touch filter2.py
+subl filter2.py
+chmod +x filter2.py
+curl -N https://projects.propublica.org/congress/assets/staffers/2017Q1-house-disburse-detail.csv | ./filter2.py > output.csv
+touch description.csv
+echo "This output file contains a list of the expenditures made by the Democratic Caucus and Republican Conference. While the statistics in my output file are for both parties combined, the data can eventually be used to analyze whether significant differences exist in the internal spending patterns for each party." > description.txt
+cat output.csv | csvstat output.csv > summary.txt
